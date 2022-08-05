@@ -15,7 +15,11 @@ from evalutils.exceptions import ValidationError
 import random
 import json
 
-execute_in_docker = False
+
+####
+# Toggle the variable below to debug locally. The final container would need to have execute_in_docker=True
+####
+execute_in_docker = True
 
 
 class VideoLoader():
