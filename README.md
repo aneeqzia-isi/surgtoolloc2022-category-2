@@ -64,7 +64,7 @@ git clone https://github.com/aneeqzia-isi/surgtoolloc2022-category-2.git
 
 ![Alt text](README_files/dockerfile_instructions.png?raw=true "Flow")
 
-3. Edit `process.py` - this is the main step for adapting this repo for your model. This script will load your model and corresponding weights, perform inference on input videos one by one along with any required pre/post-processing, and return the predictions of surgical tool classification as a dictionary. The class Surgtoolloc_det contains the predict function. You should replace the dummy code in this function with the code for your inference algorihm. Use `__init__` to load your weights and/or perform any needed operation.
+3. Edit `process.py` - this is the main step for adapting this repo for your model. This script will load your model and corresponding weights, perform inference on input videos one by one along with any required pre/post-processing, and return the predictions of surgical tool classification as a dictionary. The class Surgtoolloc_det contains the predict function. You should replace the dummy code in this function with the code for your inference algorihm. Use `__init__` to load your weights and/or perform any needed operation. We have added `TODO` on places which you would need to adapt for your model
 
 4. Run `build.sh`  to build the container. 
 
