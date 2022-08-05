@@ -123,6 +123,13 @@ class Surgtoolloc_det(DetectionAlgorithm):
         return predictions
 
     def predict(self, fname) -> DataFrame:
+        """
+        Inputs:
+        fname -> video file path
+        
+        Output:
+        tools -> list of prediction dictionaries (per frame) in the correct format as described in documentation 
+        """
         print('Video file to be loaded: ' + str(fname))
         cap = cv2.VideoCapture(str(fname))
         num_frames = int(cap.get(cv2.CAP_PROP_FRAME_COUNT))
