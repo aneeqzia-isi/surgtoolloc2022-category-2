@@ -17,11 +17,11 @@ You will need to have [Docker](https://docs.docker.com/) installed on your syste
 
 ## Prediction format
 
-For category 2 of [SurgToolLoc Challenge](https://surgtoolloc.grand-challenge.org/) (surgical tool classification) the instructions to generate the Docker container are given below
+For category 2 of [SurgToolLoc Challenge](https://surgtoolloc.grand-challenge.org/) (surgical tool detection) the instructions to generate the Docker container are given below
 
-### Category #2 – Surgical tool detection:  
+### Category #2 – Surgical tool detection:  
 
-The output json file needs to be a list of dictionaries, containing information of tools present (from the total of 14 possible tools) in each frame of the input video. An example is given below: 
+The output json file needs to be a dictionary containing the set of tools detected in each frame with its correspondent bounding box corners (x, y), again generating a single json file for each video like given below:  
 
 ```
 { 
