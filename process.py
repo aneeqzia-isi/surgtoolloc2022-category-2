@@ -68,6 +68,12 @@ class Surgtoolloc_det(DetectionAlgorithm):
                 )
             ),
         )
+        
+        ###                                                                                                     ###
+        ###  TODO: adapt the following part for creating your model and loading weights
+        ###                                                                                                     ###
+        
+        
         self.tool_list = ["needle_driver",
                           "monopolar_curved_scissor",
                           "force_bipolar",
@@ -97,7 +103,7 @@ class Surgtoolloc_det(DetectionAlgorithm):
             json.dump(self._case_results[0], f)
 
     def generate_bbox(self, frame_id):
-        # bbox coordinates are the four corners of a box: [x, y, 0]
+        # bbox coordinates are the four corners of a box: [x, y, 0.5]
         # Starting with top left as first corner, then following the clockwise sequence
         # origin is defined as the top left corner of the video frame
         num_predictions = 2
@@ -116,6 +122,11 @@ class Surgtoolloc_det(DetectionAlgorithm):
         print('Video file to be loaded: ' + str(fname))
         cap = cv2.VideoCapture(str(fname))
         num_frames = int(cap.get(cv2.CAP_PROP_FRAME_COUNT))
+        ###                                                                     ###
+        ###  TODO: adapt the following part for YOUR submission: make prediction
+        ###                                                                     ###
+       
+        
         all_frames_predicted_outputs = []
         for fid in range(num_frames):
             tool_detections = self.generate_bbox(fid)
