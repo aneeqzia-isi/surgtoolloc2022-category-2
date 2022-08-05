@@ -78,9 +78,9 @@ git clone https://github.com/aneeqzia-isi/surgtoolloc2022-category-2.git
 
 1. Create a new algorithm [here](https://grand-challenge.org/algorithms/create/). Fill in the fields as specified on the form.
 
-2. On the page of your new algorithm, go to `Containers` on the left menu and click `Upload a Container`. Now upload your `.tar.gz` file produced in step 5. **We will not accept submissions of containers linked to a GitHub repo.**
+2. On the page of your new algorithm, go to `Containers` on the left menu and click `Upload a Container`. Now upload your `.tar.gz` file produced in step 5. 
 
-3. After the Docker container is marked as `Ready`, you can try out your own algorithm when clicking `Try-out Algorithm` on the page of your algorithm, again in the left menu.
+3. After the Docker container is marked as `Ready`, you can try out your own algorithm when clicking `Try-out Algorithm` on the page of your algorithm, again in the left menu. You can try uploading the video placed in /test folder to see if your algorithm runs on it.
 
 4. Now, we will make a submission to one of the test phases. Go to the [SurgToolLoc Challenge](https://surgtoolloc.grand-challenge.org/) and click `Submit`. Under `Algorithm`, choose the algorithm that you just created. Then hit `Save`. After the processing in the backend is done, your submission should show up on the leaderboard if there are no errors.
 
