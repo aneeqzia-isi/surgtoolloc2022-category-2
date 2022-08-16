@@ -118,7 +118,8 @@ class Surgtoolloc_det(DetectionAlgorithm):
                     [92.6, 95.5, 0.5],
                     [92.6, 136.1, 0.5],
                     [54.7, 136.1, 0.5]]
-            prediction = {"corners": bbox, "name": name}
+            score = np.random.rand()
+            prediction = {"corners": bbox, "name": name, "probability": score}
             predictions.append(prediction)
         return predictions
 

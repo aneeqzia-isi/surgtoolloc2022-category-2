@@ -29,12 +29,13 @@ The output json file needs to be a dictionary containing the set of tools detect
     "boxes": [ 
         { 
         "corners": [ 
-            [ 92.66666412353516, 136.06668090820312, 0.50], 
+            [ 92.66666412353516, 136.06668090820312, 0.5], 
             [ 54.79999923706055, 136.06668090820312, 0.5], 
             [ 54.79999923706055, 95.53333282470703, 0.5], 
             [ 92.66666412353516, 95.53333282470703, 0.5] 
         ], 
-        "name": "slice_nr_1_needle_driver" 
+        "name": "slice_nr_1_needle_driver",
+        "probability": 0.452
         }, 
         { 
         "corners": [ 
@@ -43,7 +44,8 @@ The output json file needs to be a dictionary containing the set of tools detect
             [ 54.79999923706055, 95.53333282470703, 0.5], 
             [ 92.66666412353516, 95.53333282470703, 0.5] 
         ], 
-        "name": "slice_nr_2_monopolar_curved_scissor" 
+        "name": "slice_nr_2_monopolar_curved_scissor", 
+        "probability": 0.783
         } 
     ], 
     "version": { "major": 1, "minor": 0 } 
