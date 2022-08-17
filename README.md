@@ -52,6 +52,7 @@ The output json file needs to be a dictionary containing the set of tools detect
 } 
 ```
  Please note that the third value of each corner coordinate is not necessary for predictions but must be kept 0.5 always to comply with the Grand Challenge automated evaluation system (which was built to also consider datasets of 3D images). To standardize the submissions, the first corner is intended to be the top left corner of the bounding box, with the subsequent corners following the clockwise direction. The “type” and “version” entries are to comply with grand-challenge automated evaluation system. 
+ **Please use the "probability" entry to include the confidence score for each detected bounding box.**
 
 
 ## Adapting the container to your algorithm
