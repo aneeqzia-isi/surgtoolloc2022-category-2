@@ -83,7 +83,7 @@ git clone https://github.com/aneeqzia-isi/surgtoolloc2022-category-2.git
 
 2. On the page of your new algorithm, go to `Containers` on the left menu and click `Upload a Container`. Now upload your `.tar.gz` file produced in step 5. 
 
-3. After the Docker container is marked as `Ready`, you may be temped to try out your own algorithm when clicking `Try-out Algorithm` on the page of your algorithm. But doing so will likely fail. WARNING: Using this container in `Try-out` will fail. However, if built correctly, the container should still work for the Prelim submission.
+3. After the Docker container is marked as `Ready`, you may be temped to try out your own algorithm when clicking `Try-out Algorithm` on the page of your algorithm. But doing so will likely fail. WARNING: Using this container in `Try-out` will fail. You can still use the Try-out feature to check logs from the algorithm and ensure that processes are running but it will not pass. However, if built correctly and you see the expected logs from your algorithm, then the container should still work for the Prelim submission. 
 
 4. WE STRONGLY RECOMMEND that you make at least 1-2 Prelim submissions before August 26th to ensure that your container runs correctly. Start earlier (Aug 19th) so we can help debug issues that may arise, otherwise there will be no opportunities to debug containers during the main submission!
 
